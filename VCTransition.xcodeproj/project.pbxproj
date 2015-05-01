@@ -14,6 +14,8 @@
 		515D4CAF1AF228660086D49D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515D4CAE1AF228660086D49D /* Images.xcassets */; };
 		515D4CB21AF228660086D49D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 515D4CB01AF228660086D49D /* LaunchScreen.xib */; };
 		515D4CBE1AF228660086D49D /* VCTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 515D4CBD1AF228660086D49D /* VCTransitionTests.m */; };
+		515D4CC91AF2288F0086D49D /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 515D4CC81AF2288F0086D49D /* Animator.m */; };
+		51E3660C1AF22C4F0093655E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E3660B1AF22C4F0093655E /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		515D4CB71AF228660086D49D /* VCTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515D4CBC1AF228660086D49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515D4CBD1AF228660086D49D /* VCTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTransitionTests.m; sourceTree = "<group>"; };
+		515D4CC71AF2288F0086D49D /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		515D4CC81AF2288F0086D49D /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		51E3660A1AF22C4F0093655E /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		51E3660B1AF22C4F0093655E /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				515D4CA61AF228660086D49D /* AppDelegate.m */,
 				515D4CA81AF228660086D49D /* ViewController.h */,
 				515D4CA91AF228660086D49D /* ViewController.m */,
+				515D4CC71AF2288F0086D49D /* Animator.h */,
+				515D4CC81AF2288F0086D49D /* Animator.m */,
+				51E3660A1AF22C4F0093655E /* NavigationViewController.h */,
+				51E3660B1AF22C4F0093655E /* NavigationViewController.m */,
 				515D4CAB1AF228660086D49D /* Main.storyboard */,
 				515D4CAE1AF228660086D49D /* Images.xcassets */,
 				515D4CB01AF228660086D49D /* LaunchScreen.xib */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515D4CC91AF2288F0086D49D /* Animator.m in Sources */,
 				515D4CAA1AF228660086D49D /* ViewController.m in Sources */,
+				51E3660C1AF22C4F0093655E /* NavigationViewController.m in Sources */,
 				515D4CA71AF228660086D49D /* AppDelegate.m in Sources */,
 				515D4CA41AF228660086D49D /* main.m in Sources */,
 			);
@@ -299,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VCTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VCTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +432,7 @@
 				515D4CC31AF228660086D49D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		515D4CC41AF228660086D49D /* Build configuration list for PBXNativeTarget "VCTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				515D4CC61AF228660086D49D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
